@@ -22,18 +22,21 @@ describe "Static pages" do
     before { visit root_path }
     let(:heading)    { 'Help' }
     let(:page_title) { 'Help' }
+    end
 
 
    describe "About page" do
       before { visit root_path }
       let(:heading)    { 'About' }
       let(:page_title) { 'About Us' }
+      end
 
 
     describe "Contact page" do
         before { visit root_path }
         let(:heading)    { 'Contact' }
         let(:page_title) { 'Contact' }
+        end
 
         it "should have the right links on the layout" do
           visit root_path
